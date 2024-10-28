@@ -3,9 +3,10 @@
   "version": "1.0.1",
   "description": "all venting heartbreak needed",
   "main": "dist/index.js",
+  "types": "types/venting-heartbreak.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc && node replace-paths.js",
     "prepublishOnly": "pnpm build"
   },
   "repository": {
@@ -22,11 +23,28 @@
   },
   "homepage": "https://github.com/Muhaimini/venting-heartbreak#readme",
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/react-hooks": "^8.0.1",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "babel-plugin-module-resolver": "^5.0.2",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@venting-heartbreak": "link:/Users/a2017/Desktop/npm/venting-heartbreak",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
