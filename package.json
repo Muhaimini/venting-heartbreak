@@ -1,6 +1,6 @@
 {
   "name": "venting-heartbreak",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "all venting heartbreak needed",
   "main": "dist/index.js",
   "scripts": {
