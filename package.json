@@ -1,9 +1,8 @@
 {
   "name": "venting-heartbreak",
   "version": "1.0.0",
-  "description": "all venting hearbreak needed",
+  "description": "all venting heartbreak needed",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc",
@@ -23,8 +22,10 @@
   },
   "homepage": "https://github.com/Muhaimini/venting-heartbreak#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.8.1",
     "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.6.3"
   }
 }
