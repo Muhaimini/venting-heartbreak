@@ -1,5 +1,5 @@
 export const hello = (params: number) => {
-  console.log("HELLO!", params);
+  return `Params: ${params}`;
 };
 
 export default hello;
